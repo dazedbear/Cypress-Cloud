@@ -4,8 +4,10 @@ node_modules
 cypress/screenshots
 cypress/videos
 cypress/logs
+cypress/results
 cypress/fixtures/profile.json
 cypress/fixtures/users.json
 .history
 .vscode
+.lambdatest
 env

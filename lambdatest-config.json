@@ -10,31 +10,28 @@
          "versions": [
             "latest-1"
          ]
-      },
-      {
-         "browser": "Firefox",
-         "platform": "Windows 10",
-         "versions": [
-            "latest-1"
-         ]
       }
    ],
    "run_settings": {
-      "cypress_config_file": "cypress.json",
-      "build_name": "build-name",
-      "parallels": 2,
-      "specs": "./cypress/integration/examples/*.spec.js",
-      "ignore_files": "",
+      "build_name": "Cypress-Cloud-v13-demo",
+      "parallels": 1,
+      "specs": "**/actions.spec.js",
+      "exclude_specs": "node_modules/**/*.spec.js",
+      "ignore_files": "*.log",
+      "downloads": "./cypress/results",
+      "detailed_command_logs" : true,
       "feature_file_suppport": false,
       "network": false,
       "headless": false,
       "reporter_config_file": "",
       "npm_dependencies": {
-         "cypress": "9.0.0"
-      }
+         "cypress": "13.14.2",
+         "cypress-terminal-report": "^5.3.2"
+      },
+      "sync": true
    },
    "tunnel_settings": {
-      "tunnel": false,
-      "tunnel_name": null
+      "tunnel": true,
+      "tunnel_name": "my-local-test-tunnel"
    }
 }
