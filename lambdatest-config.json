@@ -14,16 +14,16 @@
    ],
    "run_settings": {
       "build_name": "Cypress-Cloud-v13-demo",
+      "cypress_settings": "--config-file cypress.config.js",
       "parallels": 1,
-      "specs": "**/actions.spec.js",
+      "specs": "./cypress/integration/examples/actions.spec.js",
       "exclude_specs": "node_modules/**/*.spec.js",
       "ignore_files": "*.log",
       "downloads": "./cypress/results",
       "detailed_command_logs" : true,
-      "feature_file_suppport": false,
       "network": false,
       "headless": false,
-      "reporter_config_file": "",
+      "reporter_config_file": "base_reporter_config.json",
       "npm_dependencies": {
          "cypress": "13.14.2",
          "cypress-terminal-report": "^5.3.2"

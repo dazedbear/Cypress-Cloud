@@ -13,6 +13,8 @@ module.exports = defineConfig({
       });
     },
     baseUrl: "https://example.cypress.io",
+    // supportFile: false,
+    specPattern: "cypress/integration/examples/actions.spec.js",
     viewportWidth: 1920,
     viewportHeight: 1080,
     video: true,
